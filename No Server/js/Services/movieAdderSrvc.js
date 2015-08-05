@@ -1,5 +1,6 @@
 app.service('movieAdderSrvc', function (fb) {
 
+//Creates new urls in firebase.
     this.getMovieList = function () {
         return new Firebase(fb.url + '/movieadder');
     };

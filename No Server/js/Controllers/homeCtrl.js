@@ -1,16 +1,18 @@
 app.controller('homeCtrl', function ($scope, homeSrvc) {
 
-    $scope.movieShow = false;
-    $scope.restaurantShow = false;
-    $scope.dessertShow = false;
-
+//When try again button is clicked, reload page.
     $scope.refreshPage = function () {
         $(document).click(function () {
             location.reload();
         });
     };
 
+//Cards set to not show
+    $scope.movieShow = false;
+    $scope.restaurantShow = false;
+    $scope.dessertShow = false;
 
+//Gets array of movies from firebase, then generates random number which coordinates to movie object in array.
     $scope.getRandomMovie = function () {
         homeSrvc.getMovies().then(function (response) {
             $scope.moviesArray = response;
@@ -20,6 +22,7 @@ app.controller('homeCtrl', function ($scope, homeSrvc) {
         });
     } ();
 
+//Gets array of restaurants from firebase, then generates random number which coordinates to restaurant object in array.
     $scope.getRandomRestaurant = function () {
         homeSrvc.getRestaurant().then(function (response) {
             $scope.restaurantsArray = response;
@@ -29,6 +32,7 @@ app.controller('homeCtrl', function ($scope, homeSrvc) {
         });
     } ();
 
+//Gets array of dessert places from firebase, then generates random number which coordinates to dessert place object in array.
     $scope.getRandomDessert = function () {
         homeSrvc.getDessert().then(function (response) {
             $scope.dessertsArray = response;

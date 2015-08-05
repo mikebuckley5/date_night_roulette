@@ -1,3 +1,4 @@
+//This directive animates the three cards on home page.
 app.directive('animateBoxes', function () {
     return ({
         restrict: 'C',
@@ -21,6 +22,7 @@ app.directive('animateBoxes', function () {
     });
 });
 
+//This directive animates landing page button.
 app.directive('animateButtonIn', function () {
     return ({
         restrict: 'C',
@@ -36,6 +38,7 @@ app.directive('animateButtonIn', function () {
     });
 });
 
+//This directive animates text on landing page.
 app.directive('animateTextIn', function () {
     return ({
         restrict: 'C',
@@ -48,6 +51,7 @@ app.directive('animateTextIn', function () {
     });
 });
 
+//This directive animates try again div on home page.
 app.directive('animateTryAgain', function () {
     return ({
         restrict: 'C',

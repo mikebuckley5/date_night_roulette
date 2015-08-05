@@ -4,17 +4,19 @@ app.constant('fb', { url: 'https://date-night-roulette.firebaseio.com/' });
 
 app.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/landing');
-
+//For landing page.
     $stateProvider
         .state('landing', {
             url: '/landing',
             templateUrl: './Templates/landingTmpl.html'
         })
+//For home page.
         .state('home', {
             url: '/home',
             templateUrl: './Templates/homeTmpl.html',
             controller: 'homeCtrl'
         })
+//For movie/restaurant/dessert adding page.
         .state('movieadder', {
             url: '/movieadder',
             templateUrl: './Templates/movieAdderTmpl.html',

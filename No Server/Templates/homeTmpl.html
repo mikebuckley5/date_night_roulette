@@ -1,7 +1,11 @@
+
+<!--Try again bar and button-->
 <div class="try-again-div animateTryAgain">
     <div class="not-satisfied">Not Satisfied with the result?</div>
     <a href="#/home"><button type="button" class="waves-effect waves-light btn try-again-btn" ng-click="refreshPage()">Try Again</button></a>
 </div>
+
+<!--Card for movies-->
 <div class="card first card-setting animateBoxes z-depth-5" ng-show="movieShow">
     <div class="row">&nbsp;</div>
     <div class="waves-effect waves-block waves-light row image-div">
@@ -32,6 +36,8 @@
             <strong>Rated:</strong>{{movie.rating}}</p>
     </div>
 </div>
+
+<!--Card for restaurants-->
 <div class="card second card-setting animateBoxes z-depth-5" ng-show="restaurantShow">
     <div class="row">&nbsp;</div>
     <div class="waves-effect waves-block waves-light row image-div">
@@ -62,6 +68,8 @@
             <strong>Review:</strong>{{restaurant.review}}</p>
     </div>
 </div>
+
+<!--Card for dessert places-->
 <div class="card third card-setting animateBoxes z-depth-5" ng-show="dessertShow">
     <div class="row">&nbsp;</div>
     <div class="waves-effect waves-block waves-light row image-div">

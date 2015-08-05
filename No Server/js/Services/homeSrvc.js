@@ -1,5 +1,6 @@
 app.service('homeSrvc', function ($http, $q) {
 
+//Gets movies object stored in firebase.
     this.getMovies = function () {
         var deffered = $q.defer();
         $http({
@@ -16,6 +17,7 @@ app.service('homeSrvc', function ($http, $q) {
         return deffered.promise;
     };
 
+//Gets restaurant objects stored in firebase.
     this.getRestaurant = function () {
         var deffered = $q.defer();
         $http({
@@ -32,6 +34,7 @@ app.service('homeSrvc', function ($http, $q) {
         return deffered.promise;
     };
 
+//Gets dessert places objects stored in firebase.
     this.getDessert = function () {
         var deffered = $q.defer();
         $http({
