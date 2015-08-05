@@ -1,93 +1,94 @@
-
-<!---->
+<div class="try-again-div animateTryAgain">
+    <div class="not-satisfied">Not Satisfied with the result?</div>
+    <a href="#/home"><button type="button" class="waves-effect waves-light btn try-again-btn" ng-click="refreshPage()">Try Again</button></a>
+</div>
 <div class="card first card-setting animateBoxes z-depth-5" ng-show="movieShow">
-  <div class="row">&nbsp;</div>
-  <div class="waves-effect waves-block waves-light row image-div">
-    <div class="col s2">&nbsp;</div>
-    <div class="col s8"><img class="activator movie_image responsive-img card hoverable" src="{{movie.image}}" /></div>
-    <div class="col s2">&nbsp;</div>
-  </div>
-  <div class="card-content row">
-    <div class="col s2">&nbsp;</div>
-    <div class="col s8">
-      <p class="grey-text text-darken-4 center-align">Movie to Watch:</p>
-      <p class="card-title activator grey-text text-darken-4 center-align flow-text">{{movie.title}}</p>
+    <div class="row">&nbsp;</div>
+    <div class="waves-effect waves-block waves-light row image-div">
+        <div class="col s2">&nbsp;</div>
+        <div class="col s8">
+            <img class="activator movie_image responsive-img card hoverable" src="{{movie.image}}" />
+        </div>
+        <div class="col s2">&nbsp;</div>
     </div>
-    <div class="col s2">&nbsp;</div>
-  </div>
-  <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4 valign">
-      <h5>Movie: {{movie.title}}</h5><i class="material-icons right">close</i></span>
-    <p><strong>About: </strong>{{movie.info}}</p>
-    <p><strong>Rated: </strong>{{movie.rating}}</p>
-  </div>
+    <div class="card-content row">
+        <div class="col s2">&nbsp;</div>
+        <div class="col s8">
+            <p class="grey-text text-darken-4 center-align">Movie to Watch:</p>
+            <p class="card-title activator grey-text text-darken-4 center-align flow-text">
+                <span class="title-text">{{movie.title}}</span>
+            </p>
+        </div>
+        <div class="col s2">&nbsp;</div>
+    </div>
+    <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4 valign">
+            <h4>Movie: {{movie.title}}</h4>
+            <i class="material-icons right">close</i>
+        </span>
+        <p>
+            <strong>About:</strong>{{movie.info}}</p>
+        <p>
+            <strong>Rated:</strong>{{movie.rating}}</p>
+    </div>
 </div>
-<!---->
-<!---->
 <div class="card second card-setting animateBoxes z-depth-5" ng-show="restaurantShow">
-  <div class="row">&nbsp;</div>
-  <div class="waves-effect waves-block waves-light row image-div">
-    <div class="col s12"><img class="activator restaurant-image responsive-img card hoverable" src="{{restaurant.image}}" /></div>
-  </div>
-  <div class="card-content row">
-    <div class="col s2">&nbsp;</div>
-    <div class="col s8">
-      <p class="grey-text text-darken-4 center-align">Where to Eat:</p>
-      <p class="card-title activator grey-text text-darken-4 center-align flow-text">{{restaurant.name}}</p>
+    <div class="row">&nbsp;</div>
+    <div class="waves-effect waves-block waves-light row image-div">
+        <div class="col s1">&nbsp;</div>
+        <div class="col s10">
+            <img class="activator restaurant-image responsive-img card hoverable" src="{{restaurant.image}}" />
+        </div>
+        <div class="col s1">&nbsp;</div>
     </div>
-    <div class="col s2">&nbsp;</div>
-  </div>
-  <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4 valign">
-      <h5>Place: {{restaurant.name}}</h5><i class="material-icons right">close</i></span>
-    <p><strong>Type: </strong>{{restaurant.info}}</p>
-    <p><strong>Review: </strong>{{restaurant.review}}</p>
-  </div>
+    <div class="card-content row">
+        <div class="col s2">&nbsp;</div>
+        <div class="col s8">
+            <p class="grey-text text-darken-4 center-align">Where to Eat:</p>
+            <p class="card-title activator grey-text text-darken-4 center-align flow-text">
+                <span class="title-text">{{restaurant.name}}</span>
+            </p>
+        </div>
+        <div class="col s2">&nbsp;</div>
+    </div>
+    <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4 valign">
+            <h4>Place: {{restaurant.name}}</h4>
+            <i class="material-icons right">close</i>
+        </span>
+        <p>
+            <strong>Type:</strong>{{restaurant.info}}</p>
+        <p>
+            <strong>Review:</strong>{{restaurant.review}}</p>
+    </div>
 </div>
-<!---->
-<!---->
 <div class="card third card-setting animateBoxes z-depth-5" ng-show="dessertShow">
-  <div class="row">&nbsp;</div>
-  <div class="waves-effect waves-block waves-light row image-div">
-    <div class="col s1">&nbsp;</div>
-    <div class="col s10"><img class="activator dessert-image responsive-img card hoverable" src="{{dessert.image}}" /></div>
-    <div class="col s1">&nbsp;</div>
-  </div>
-  <div class="card-content row">
-    <div class="col s2">&nbsp;</div>
-    <div class="col s8">
-      <p class="grey-text text-darken-4 center-align">Where to Have Dessert:</p>
-      <p class="card-title activator grey-text text-darken-4 center-align flow-text">{{dessert.name}}</p>
+    <div class="row">&nbsp;</div>
+    <div class="waves-effect waves-block waves-light row image-div">
+        <div class="col s1">&nbsp;</div>
+        <div class="col s10">
+            <img class="activator dessert-image responsive-img card hoverable" src="{{dessert.image}}" />
+        </div>
+        <div class="col s1">&nbsp;</div>
     </div>
-    <div class="col s2">&nbsp;</div>
-  </div>
-  <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4 valign">
-      <h5>Place: {{dessert.name}}</h5><i class="material-icons right">close</i></span>
-    <p><strong>Type: </strong>{{dessert.info}}</p>
-    <p><strong>Review: </strong>{{dessert.review}}</p>
-  </div>
+    <div class="card-content row">
+        <div class="col s2">&nbsp;</div>
+        <div class="col s8">
+            <p class="grey-text text-darken-4 center-align">Where to Have Dessert:</p>
+            <p class="card-title activator grey-text text-darken-4 center-align flow-text">
+                <span class="title-text">{{dessert.name}}</span>
+            </p>
+        </div>
+        <div class="col s2">&nbsp;</div>
+    </div>
+    <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4 valign">
+            <h4>Place: {{dessert.name}}</h4>
+            <i class="material-icons right">close</i>
+        </span>
+        <p>
+            <strong>Type:</strong>{{dessert.info}}</p>
+        <p>
+            <strong>Review:</strong>{{dessert.review}}</p>
+    </div>
 </div>
-<!---->
-
-
-<!-- <ul class ="first" ng-show="movieShow" align="center">
-      <li><p><h2>Movie: {{movie.title}}</h2></p></li>
-      <li><p><img class="movie_image" src="{{movie.image}}"/></p></li>
-      <li><p><strong>About: </strong>{{movie.info}}</p></li>
-      <li><p><strong>Rated: </strong>{{movie.rating}}</p></li>
-    </ul> -->
-
-<!-- <ul class ="second" ng-show="restaurantShow" align="center">
-      <li><p><h2>Restaurant: {{restaurant.name}}</h2></p></li>
-      <li><p><img class="restaurant_image" src="{{restaurant.image}}"/></p></li>
-      <li><p><strong>Type: </strong>{{restaurant.info}}</p></li>
-      <li><p><strong>Review: </strong>{{restaurant.review}}</p></li>
-    </ul>
-
-    <ul class ="third" ng-show="dessertShow" align="center">
-      <li><p><h2>Dessert: {{dessert.name}}</h2></p></li>
-      <li><p><img class="dessert_image" src="{{dessert.image}}"/></p></li>
-      <li><p><strong>Type: </strong>{{dessert.info}}</p></li>
-      <li><p><strong>Review: </strong>{{dessert.review}}</p></li>
-    </ul>-->

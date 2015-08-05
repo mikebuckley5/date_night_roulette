@@ -1,33 +1,33 @@
 <h1>Movie Adder</h1>
 <form>
-  <input type="text" placeholder="Title.." ng-model="movie.title"></input>
-  <input type="text" placeholder="Paste Image URL.." ng-model="movie.image"></input>
-  <input type="text" placeholder="Info on Title.." ng-model="movie.info"></input>
-  <input type="text" placeholder="Paste Rating Info.." ng-model="movie.rating"></input>
-  <input type="Submit" ng-click="submitMovie(movie)"></input>
+    <input type="text" placeholder="Title.." ng-model="movie.title"></input>
+    <input type="text" placeholder="Paste Image URL.." ng-model="movie.image"></input>
+    <input type="text" placeholder="Info on Title.." ng-model="movie.info"></input>
+    <input type="text" placeholder="Paste Rating Info.." ng-model="movie.rating"></input>
+    <input type="Submit" ng-click="submitMovie(movie)"></input>
 </form>
 <ul ng-repeat="title in theMovies">
-  <li>{{ title.movie.title }}</li>
+    <li>{{ title.movie.title }}</li>
 </ul>
 <h1>Restaurant Adder</h1>
 <form>
-  <input type="text" placeholder="Restaurant Name.." ng-model="restaurant.name"></input>
-  <input type="text" placeholder="Paste Image URL.." ng-model="restaurant.image"></input>
-  <input type="text" placeholder="Info.." ng-model="restaurant.info"></input>
-  <input type="text" placeholder="Paste Review.." ng-model="restaurant.review"></input>
-  <input type="Submit" ng-click="submitRestaurant(restaurant)"></input>
+    <input type="text" placeholder="Restaurant Name.." ng-model="restaurant.name"></input>
+    <input type="text" placeholder="Paste Image URL.." ng-model="restaurant.image"></input>
+    <input type="text" placeholder="Info.." ng-model="restaurant.info"></input>
+    <input type="text" placeholder="Paste Review.." ng-model="restaurant.review"></input>
+    <input type="Submit" ng-click="submitRestaurant(restaurant)"></input>
 </form>
 <ul ng-repeat="title in theRestaurant">
-  <li>{{ title.restaurant.name }}</li>
+    <li>{{ title.restaurant.name }}</li>
 </ul>
 <h1>Dessert Adder</h1>
 <form>
-  <input type="text" placeholder="Place Name.." ng-model="dessert.name"></input>
-  <input type="text" placeholder="Paste Image URL.." ng-model="dessert.image"></input>
-  <input type="text" placeholder="Info.." ng-model="dessert.info"></input>
-  <input type="text" placeholder="Paste Review.." ng-model="dessert.review"></input>
-  <input type="Submit" ng-click="submitDessert(dessert)"></input>
+    <input type="text" placeholder="Place Name.." ng-model="dessert.name"></input>
+    <input type="text" placeholder="Paste Image URL.." ng-model="dessert.image"></input>
+    <input type="text" placeholder="Info.." ng-model="dessert.info"></input>
+    <input type="text" placeholder="Paste Review.." ng-model="dessert.review"></input>
+    <input type="Submit" ng-click="submitDessert(dessert)"></input>
 </form>
 <ul ng-repeat="title in theDessert">
-  <li>{{ title.dessert.name }}</li>
+    <li>{{ title.dessert.name }}</li>
 </ul>

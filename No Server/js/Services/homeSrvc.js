@@ -9,12 +9,12 @@ app.service('homeSrvc', function ($http, $q) {
             var rawData = response.data;
             var data = [];
             for (var key in rawData) {
-                data.push(rawData[key].movie)
+                data.push(rawData[key].movie);
             };
             deffered.resolve(data);
-        })
+        });
         return deffered.promise;
-    }
+    };
 
     this.getRestaurant = function () {
         var deffered = $q.defer();
@@ -25,12 +25,12 @@ app.service('homeSrvc', function ($http, $q) {
             var rawData = response.data;
             var data = [];
             for (var key in rawData) {
-                data.push(rawData[key].restaurant)
+                data.push(rawData[key].restaurant);
             };
             deffered.resolve(data);
-        })
+        });
         return deffered.promise;
-    }
+    };
 
     this.getDessert = function () {
         var deffered = $q.defer();
@@ -44,10 +44,7 @@ app.service('homeSrvc', function ($http, $q) {
                 data.push(rawData[key].dessert)
             };
             deffered.resolve(data);
-        })
+        });
         return deffered.promise;
-    }
-
-
-
-})
+    };
+});
